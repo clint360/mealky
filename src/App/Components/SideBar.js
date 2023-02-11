@@ -1,11 +1,10 @@
 import React from 'react';
 import './SideBar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function SideBar() {
   return (
     <div className='sidenav'>
-     <div className='closenav'><i class="fa-solid fa-xmark"></i></div>
+     <div className='closenav'><i class="fa-solid fa-chevron-left"></i></div>
       <div className='info'>
         <div className='imagecontainer'>
          <img src='https://i.pinimg.com/736x/17/62/81/1762813b82598d538df129736ec09d16.jpg' alt='' />
@@ -17,9 +16,9 @@ function SideBar() {
         </div>
       </div>
       <div className='navigator'>
-        <p><i class="fa-solid fa-feather-pointed"></i> Home</p>
-        <p><i class="fa-solid fa-feather-pointed"></i> Recipes</p>
-        <p><i class="fa-solid fa-feather-pointed"></i> Notes</p>
+        <p>• Home</p>
+        <p>• Recipes</p>
+        <p>• Notes</p>
       </div>
       <div className='bottommost'>© Mealky 2023 - built by <strong>@clint360</strong></div>
     </div>

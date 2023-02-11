@@ -10,7 +10,12 @@
 .closenav {
     font-size: 30px;
     position: absolute;
+    top: 10px;
     right: 15px;
+}
+
+.closenav:hover {
+    color: red;
 }
 
 .info {
@@ -44,6 +49,16 @@
 .navigator {
     padding-left: 30px ;
     font-size: 20px;
+}
+
+.navigator i {
+    font-size: 10px;
+}
+
+.navigator p {
+    width: 85%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid darkblue;
 }
 
 .bottommost {
