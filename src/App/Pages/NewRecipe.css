@@ -1,0 +1,36 @@
+.newrecipepage{
+    width: 100%;
+    background: white;
+    height: 100vh;
+}
+
+#details {
+    padding-top: 80px;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin: auto;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: rgb(47, 47, 47);
+}
+
+#details input {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid rgb(106, 106, 106);
+    width: 300px;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+.editor-input {
+    height: 50vh;
+}
+
+.editor-input img{
+   width: 100%;
+}
