@@ -1,25 +1,48 @@
 .sidenav {
-    position: absolute;
-    width: 350px;
+    width: 370px;
     height: 100vh;
-    background: rgb(61, 61, 221);
+    background: rgb(12, 12, 12);
     color: white;
     font-family: 'Poppins';
+    position: fixed;
 }
 
 .closenav {
     font-size: 30px;
     position: absolute;
     top: 10px;
-    right: 15px;
+    left: 315px;
+    z-index: 9999;
 }
 
 .closenav:hover {
     color: red;
 }
 
+.edituser {
+    position: absolute;
+    top: 170px;
+    left: 205px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(66, 66, 255);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.edituser:hover {
+   color: rgb(66, 66, 255);
+   background: rgba(255, 255, 255, 0.809);
+}
+
 .info {
     padding:30px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.712),  rgb(12, 12, 12)), url('../../Assets/fruits.webp');
+    background-size: contain;
 }
 
 .info h2 {
@@ -43,22 +66,27 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: inherit;
+    object-fit: cover;
 }
 
 .navigator {
-    padding-left: 30px ;
     font-size: 20px;
 }
 
-.navigator i {
-    font-size: 10px;
+.navigator ul li {
+    width: 75%;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
 }
 
-.navigator p {
-    width: 85%;
-    padding-bottom: 20px;
-    border-bottom: 2px solid darkblue;
+.navigator ul li:hover {
+    color: rgb(66, 66, 255);
 }
 
 .bottommost {

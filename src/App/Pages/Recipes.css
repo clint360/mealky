@@ -1,0 +1,60 @@
+.recipespage {
+    color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+}
+
+#headersection {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 60px;
+    background-color: rgb(66, 66, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: inherit
+}
+
+.new {
+    font-size: 20px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+    border-radius: 6px;
+    border: 2px solid white;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(66, 66, 255);
+}
+
+.new:hover {
+    color: rgb(66, 66, 255);
+    background: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 500px) {
+    .new {
+        font-size: 20px;
+        margin-left: 0px;
+        font-family: 'Poppins';
+    }
+    
+}
+
+#recipecards {
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 80px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
