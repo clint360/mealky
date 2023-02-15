@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { appProvider } from '../../Hooks/Context';
 import RecipeCard from '../Components/RecipeCard';
 import './Recipes.css';
-import { myRecipies } from '../Data/myRecipes';
+
+
 
 function Recipes() {
+  const myRecipes = useContext(appProvider)
+
   return (
     <div className='recipespage'>
        <section id='headersection'>
@@ -11,7 +15,7 @@ function Recipes() {
         <button className='new'>New Recipe</button>
         </section>
        <section id='recipecards'>
-        {myRecipies.map((items) => { return (
+        {myRecipes.map((items) => { return (
        <RecipeCard name={items.name} image={items.image} lm={items.lm} origin={items.content.origin} />
          )})}
        </section>

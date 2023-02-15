@@ -1,7 +1,8 @@
 .newrecipepage{
     width: 100%;
     background: white;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 30px;
 }
 
 #details {
@@ -16,15 +17,24 @@
     color: rgb(47, 47, 47);
 }
 
+
+.detdiv {
+    background: rgb(66, 66, 255);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
 #details input {
     background: none;
     border: none;
     padding: 5px 10px;
-    border-bottom: 2px solid rgb(106, 106, 106);
+    border-bottom: 2px solid rgb(255, 255, 255);
     width: 300px;
     outline: none;
     font-size: 20px;
     font-family: 'Poppins';
+    color: white;
 }
 
 .editor-input {

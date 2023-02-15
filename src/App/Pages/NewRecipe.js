@@ -40,9 +40,11 @@ function NewRecipe() {
         <button className='new'>Back </button>
         </section>
         <section id='details'>
-            <strong>Name:</strong> <input type='text' /> <br />
+          <div className='detdiv'>
+            <strong>Recipe Name:</strong> <input type='text' /> <br />
             <strong>Origin:</strong> <input type='text' /> <br />
             <strong>Picture:</strong> <input type='file' className='uploadfile' accept="image/*" ref={imageRef} onChange={handleChange}/> <br />
+            </div>
             <br />
             <ReactQuill
             theme="snow"
