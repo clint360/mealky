@@ -2,15 +2,16 @@
 import './Face.css';
 import Recipes from './Pages/Recipes';
 import './Face.css'
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SideBar from './Components/SideBar';
 import NewRecipe from './Pages/NewRecipe';
-import { appProvider } from '../Hooks/Context';
-import food from './../Assets/fufu.jpeg'
+import ViewRecipe from './Pages/ViewRecipe';
+import EditRecipe from './Pages/EditRecipe'
+import Activity from './Pages/Activity';
+import Explore from './Pages/Explore';
+
 function Face() {
-  const [myRecipes, setMyRecipes] = useState([
-    {name: 'Corn Fufu', image: {food}, lm: '12/30/20', content: {origin: 'cameroon', value: 'How to'}}
-  ])
   const [nav, setNav] = useState('translateX(-500px)');
   const openNav = () => {
     setNav('translateX(0px)')
@@ -25,13 +26,22 @@ function Face() {
   }
 
   return (
-    <appProvider value={ myRecipes, setMyRecipes }>
     <div className='mainface' >
+      <Router>
       <div className='navigate' onClick={openNav}><i class="fa-solid fa-bars"></i></div>
       <div className='sidebar' style={side}><SideBar closer={closeNav}/></div>
-      <div className='right' onClick={closeNav}><Recipes/></div>
+      <div className='right' onClick={closeNav}>     
+        <Routes>
+          <Route path='/recipes' element={<Recipes />} />
+          <Route path='/newrecipe' element={<NewRecipe />} />
+          <Route path='/view' element={<ViewRecipe />} />
+          <Route path='/edit' element={<EditRecipe />} />
+          <Route path='/activity' element={<Activity />} />
+          <Route path='/explore' element={<Explore />} />
+        </Routes>
+      </div>
+      </Router>
     </div>
-    </appProvider>
   )
 }
 

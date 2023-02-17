@@ -3,18 +3,16 @@ import './NewRecipe.css';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { Context } from '../../Hooks/Context';
-import { redirect } from 'react-router-dom';
 
 
-
-function NewRecipe() {
-  const d = new Date()
+function EditRecipe() {
+    const { myRecipes, setMyRecipes, currentIndex } = useContext(Context);
+    const d = new Date()
     const datemodified = d.toDateString();
     var time = d.getHours() + ":" + d.getMinutes();
-    const { myRecipes, setMyRecipes } = useContext(Context);
+    const [recipename, setRecipename] = useState(myRecipes[currentIndex].name);
     const recipenameRef = useRef(null);
-    const [value, setValue] = useState('');
-    const [recipename, setRecipename] = useState('No name');
+    const [value, setValue] = useState(myRecipes[currentIndex].content);
     const [image, setImage] = useState(null)
     const [imageURL, setImageURL] = useState('')
   
@@ -33,24 +31,21 @@ function NewRecipe() {
       }
     }
   
-    const handleChange = () => {
-        setRecipename(recipenameRef.current.value)
+    const hc = () => {
+        setRecipename(recipenameRef.current.value);
     }
+  
+    const saveRecipe = () => {
+        myRecipes[currentIndex]= {
+          name: recipename,
+          image: imageURL, 
+          lm: `${datemodified} , ${time}`, 
+          content: value 
+        }
+        setMyRecipes((prev)=>[...prev]);
+        console.log(myRecipes);
+       }
 
-    useEffect(()=>{
-      setValue(value);
-    },[value])
-    
-     const saveNewRecipe = () => {
-      const newrecipeObj = {
-        name: recipename,
-        image: imageURL, 
-        lm: `${datemodified} , ${time}`, 
-        content: value 
-      }
-      setMyRecipes((prev)=>[...prev, newrecipeObj]);
-      console.log(myRecipes);
-     }
 
 
   const modules = {
@@ -72,13 +67,13 @@ function NewRecipe() {
   return (
     <div className='newrecipepage'>
         <section id='headersection'>
-        <p>NEW RECIPE</p>
+        <p>Edit { myRecipes[currentIndex].name}</p>
         <button className='new' onClick={()=>{window.history.back()}}>Back </button>
         </section>
         <section id='details'>
           <div className='detdiv'>
-            <strong>Recipe Name:</strong> <input onChange={handleChange} ref={recipenameRef} type='text' required/> <br />
-          <form  onSubmit={handleImageUpload}><strong>Picture:</strong> <input className='uploadfile' type='file' accept="image/*" name='foodimage'/><button type='submit'>Upload</button> <br /></form>  
+            <strong>New Name:</strong> <input onChange={hc} ref={recipenameRef} type='text' placeholder={myRecipes[currentIndex].name} contenteditable/> <br />
+            <form  onSubmit={handleImageUpload}><strong>Picture:</strong> <input className='uploadfile' type='file' accept="image/*" name='foodimage'/><button type='submit'>Upload</button> <br /></form>  
             </div>
             <br />
             <ReactQuill
@@ -90,11 +85,11 @@ function NewRecipe() {
             spellcheck="true"
             placeholder='Write in your recipe here'
           /><br />
-          <button className='new' style={{marginLeft: "0px", marginTop: '100px'}} onClick={()=>{saveNewRecipe(); window.history.back()}}>Save Recipe</button>
+          <button className='new' style={{marginLeft: "0px", marginTop: '100px'}} onClick={saveRecipe} >Save Recipe</button>
         </section>
        
     </div>
   )
 }
 
-export default NewRecipe
+export default EditRecipe

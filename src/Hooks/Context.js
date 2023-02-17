@@ -1,5 +1,5 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { createContext } from "react";
 
-const Context = createContext(null);
-
-export const appProvider = Context.Provider;
+export const Context = createContext();
+export const Provider = Context.Provider

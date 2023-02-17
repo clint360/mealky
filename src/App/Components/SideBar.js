@@ -1,6 +1,7 @@
 import React from 'react';
 import './SideBar.css';
-import userPic from '../../Assets/me.png'
+import userPic from '../../Assets/me.png';
+import { Link } from 'react-router-dom';
 
 function SideBar({closer}) {
   return (
@@ -19,9 +20,9 @@ function SideBar({closer}) {
       </div>
       <div className='navigator'>
        <ul type='none'>
-        <li><i class="fa-brands fa-internet-explorer"></i> Explore</li>
-        <li><i class="fa-solid fa-utensils"></i> Recipes</li>
-        <li><i class="fa-regular fa-clipboard"></i> Notes</li>
+       <Link to='/explore'><li><i class="fa-brands fa-internet-explorer"></i> Explore</li></Link> 
+       <Link to='/recipes'><li><i class="fa-solid fa-utensils"></i> Recipes</li></Link> 
+       <Link to='/activity'> <li><i class="fa-regular fa-clipboard"></i> Activity</li></Link>
         <li><i class="fa-solid fa-right-from-bracket"></i> Log Out</li>
        </ul>
       </div>
