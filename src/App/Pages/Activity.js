@@ -8,7 +8,6 @@ function Activity() {
     <div>
         <section id='headersection'>
         <p>RECENT ACTIVITY</p>
-        <button className='new'>PRINT </button>
         </section>
         <section className='pastactivities'>
          <div className='headera'>

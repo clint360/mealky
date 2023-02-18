@@ -12,6 +12,7 @@ import Activity from './Pages/Activity';
 import Explore from './Pages/Explore';
 import Landing from '../Landing/Landing';
 import Exploreveiwer from './Explore/Exploreveiwer';
+import Favourites from './Pages/Favourites';
 
 function Face() {
   const [nav, setNav] = useState('translateX(-500px)');
@@ -35,6 +36,7 @@ function Face() {
       <div className='right' onClick={closeNav}>     
         <Routes>
           <Route path='/recipes' element={<Recipes />} />
+          <Route path='/favorites' element={<Favourites />} />
           <Route path='/newrecipe' element={<NewRecipe />} />
           <Route path='/view' element={<ViewRecipe />} />
           <Route path='/edit' element={<EditRecipe />} />

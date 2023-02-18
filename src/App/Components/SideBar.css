@@ -12,7 +12,7 @@
     position: absolute;
     top: 10px;
     left: 315px;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .closenav:hover {
@@ -39,13 +39,13 @@
    background: rgba(255, 255, 255, 0.809);
 }
 
-.info {
+.sidenav .info {
     padding:30px 0;
     background: linear-gradient(rgba(0, 0, 0, 0.712),  rgb(12, 12, 12)), url('../../Assets/fruits.webp');
     background-size: contain;
 }
 
-.info h2 {
+.sidenav .info h2 {
     font-weight: 200;
 }
 
@@ -99,4 +99,10 @@ a {
     position: absolute;
     bottom: 2px;
     padding-left: 10px;
+}
+
+.editUI {
+    position: absolute;
+    z-index: 99999;
+    top: 0px;
 }

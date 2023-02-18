@@ -33,6 +33,12 @@
     transition: 0.3s transform;
 }
 
+@media screen and (max-width: 600px) {
+    .delpop {
+        left: 10%;
+    }
+}
+
 .new {
     font-size: 20px;
     margin-left: 50px;
@@ -63,8 +69,26 @@
 #recipecards {
     width: 90%;
     margin: auto;
-    padding: 80px 30px;
+    padding: 0px 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 4px;
+}
+
+.searchSection {
+    padding-top: 90px;
+    height: 10vh;
+    color: white;
+    text-align: center;
+}
+
+.searchSection input {
+    font-size: 20px;
+    padding: 10px 20px;
+    min-width: 300px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    outline: none;
 }

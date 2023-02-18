@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
+import React, { useState, useRef, useContext } from 'react';
 import './NewRecipe.css';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
@@ -40,7 +40,8 @@ function EditRecipe() {
           name: recipename,
           image: imageURL, 
           lm: `${datemodified} , ${time}`, 
-          content: value 
+          content: value,
+          favorite: false 
         }
         setMyRecipes((prev)=>[...prev]);
         console.log(myRecipes);

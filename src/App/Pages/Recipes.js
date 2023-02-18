@@ -46,6 +46,9 @@ function Recipes() {
         <p>YOUR RECIPES</p>
    <Link to='/newrecipe'><button className='new'>New Recipe</button></Link>     
         </section>
+       <section className='searchSection'>
+        <input type='text' placeholder='Search for a recipe'/>      
+       </section>
        <section id='recipecards'> 
         {myRecipes.map((items, index) => { return (
        <RecipeCard name={items.name} 
@@ -53,6 +56,8 @@ function Recipes() {
        lm={items.lm}
        open={()=>{open(); setIndexer(index)}}
        pic={()=>{setCurrentIndex(index)}}
+       index={index}
+       heartpresent={true}
         />
          )})}
        </section>

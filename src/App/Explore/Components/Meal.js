@@ -7,7 +7,7 @@ const Meal = () => {
     const[search,setSearch]=useState("");
     const[Mymeal,setMeal]=useState();
     const searchMeal=(evt)=>{
-        if(evt.key=="Enter")
+        if(evt.key==="Enter")
         {
             fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`).then(res=>res.json()).then(data=> {setMeal(data.meals);setSearch("")})
         }
@@ -16,15 +16,15 @@ const Meal = () => {
         <>
             <div className="main">
                 <div className="heading">
-                   <div className="img"><img  src={logo} /></div> 
+                   <div className="img"><img  src={logo} alt='images'/></div> 
                 </div>
                 <div className="searchBox">
-                    <input type="search" placeholder="Press Enter to view all" className="search-bar" onChange={(e)=>setSearch(e.target.value)} value={search} onKeyPress={searchMeal}/>
+                    <input type="search" placeholder="Input recipe or press enter" className="search-bar" onChange={(e)=>setSearch(e.target.value)} value={search} onKeyPress={searchMeal}/>
                 </div>
                 <div className="container">
                    {   
                   
-                    (Mymeal==null)? <p className="notSearch">Not found</p> : 
+                    (Mymeal==null)? <p className="notSearch"></p> : 
                          Mymeal.map((res)=>{
                              return(
                             <Mealitem data={res}/>)} 

@@ -3,7 +3,6 @@ import './NewRecipe.css';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { Context } from '../../Hooks/Context';
-import { redirect } from 'react-router-dom';
 
 
 
@@ -46,7 +45,8 @@ function NewRecipe() {
         name: recipename,
         image: imageURL, 
         lm: `${datemodified} , ${time}`, 
-        content: value 
+        content: value, 
+        favorite: false
       }
       setMyRecipes((prev)=>[...prev, newrecipeObj]);
       console.log(myRecipes);
