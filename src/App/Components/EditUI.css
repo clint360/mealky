@@ -18,8 +18,9 @@
    color: white;
    font-size: 15px;
    font-family: 'Poppins';
+   border: none;
 }
 
 .euif input :nth-child(1) {
     border-bottom: 2px solid transparent;
-}
+} 
