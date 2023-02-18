@@ -1,0 +1,53 @@
+.recipecard {
+    margin: 5px;
+    padding: 0;
+    width: 320px;
+    height: 400px;
+    background: rgb(66, 66, 255);
+    border: 3px solid rgb(66, 66, 255);
+    border-radius: 30px;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.recipeImage {
+    width: 100%;
+    height: 280px;
+    background: rgb(12, 12, 12);
+    border-radius: 30px;
+}
+
+.recipeImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.recipeContent h2 {
+    line-height: 25px;
+}
+
+.recipeContent p {
+    color: yellow;
+}
+
+.recipeContent {
+    width: 75%;
+    line-height: 10px;
+    padding: 0 10px;
+}
+
+.recipeContent h1 {
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.actions {
+    padding-top: 10px;
+    font-size: 30px;
+}

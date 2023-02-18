@@ -1,0 +1,29 @@
+#headersection {
+    width: 100%;
+}
+
+.viewrecipe {
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: radial-gradient(rgba(0, 0, 0, 0.805), black), url('https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg');
+    background-size: cover;
+}
+
+.actualcontent img {
+    max-width: 340px;
+    margin: auto;
+}
+
+.actualcontent {
+    box-sizing: border-box;
+    margin: auto;
+    min-width: 350px;
+    min-height: 100vh;
+    width: 80%;
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+

@@ -1,0 +1,26 @@
+.euif {
+    width: 370px;
+    height: 350px;
+    background: rgb(12, 12, 12);
+    text-align: center;
+    line-height: 40px;
+}
+
+.hey {
+    width: 80px;
+}
+
+.euif input {
+   background: none;
+   border: none;
+   border-bottom: 2px solid white;
+   outline: none;
+   color: white;
+   font-size: 15px;
+   font-family: 'Poppins';
+   border: none;
+}
+
+.euif input :nth-child(1) {
+    border-bottom: 2px solid transparent;
+} 

@@ -1,0 +1,15 @@
+.headersection {
+    width: 100%;
+}
+
+.explore {
+    padding-top: 70px;
+}
+
+.frame {
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    outline: none;
+    border: none;
+}

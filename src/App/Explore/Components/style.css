@@ -1,0 +1,115 @@
+.heading h1{
+    color:white;
+    font-size: 48px;
+    font-weight:900;
+    letter-spacing: 1px;
+    padding-top:2rem;
+    text-align: center;
+    text-shadow: 3px 6px rgba(50,50,70,0.7);
+}
+.heading h4{
+    color:white;
+    text-align: center;
+}
+.searchBox{
+    text-align: center;
+    margin:3rem;
+}
+.search-bar{
+    margin: auto;
+    width:350px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+   background: transparent;
+   border: 2px solid white;
+   color: white;
+   font-size: 20px;
+   font-family: 'Poppins';
+}
+.notSearch{
+    font-size: 35px;
+    color:white;
+    font-weight:900;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.card{
+    margin: 5px;
+    padding: 0;
+    width: 320px;
+    height: 400px;
+    background: rgb(66, 66, 255);
+    border: 3px solid rgb(66, 66, 255);
+    border-radius: 30px;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.card .inner {
+    width: 100%;
+    height: 280px;
+    background: rgb(12, 12, 12);
+    border-radius: 30px;
+}
+
+.card .inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.card .info{
+    color:white;  
+    padding-left: 10px;
+  }
+ 
+  .card .info h2{
+      margin:0;
+      font-weight: 900;
+      margin-top: 15px;
+  }
+  .card .info p{
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.card .recipe{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    display: none;
+    transition: 0.3s all;
+}
+
+.recipe h2{
+    margin-bottom:10px;
+}
+.recipe img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recipe p{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recipe a{   
+    display: block;
+    text-align: center;
+}

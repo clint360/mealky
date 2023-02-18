@@ -1,0 +1,94 @@
+.recipespage {
+    color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    background: radial-gradient(rgba(0, 0, 0, 0.641), black), url('https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg');
+    background-size: cover;
+}
+
+#headersection {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 60px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: inherit
+}
+
+.delpop {
+    position: fixed;
+    left: 40%;
+    top: 20%;
+    transition: 0.3s transform;
+}
+
+@media screen and (max-width: 600px) {
+    .delpop {
+        left: 10%;
+    }
+}
+
+.new {
+    font-size: 20px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+    border-radius: 6px;
+    border: 2px solid white;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(66, 66, 255);
+}
+
+.new:hover {
+    color: rgb(66, 66, 255);
+    background: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 500px) {
+    .new {
+        font-size: 20px;
+        margin-left: 0px;
+        font-family: 'Poppins';
+    }
+    
+}
+
+#recipecards {
+    width: 90%;
+    margin: auto;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.searchSection {
+    padding-top: 90px;
+    height: 10vh;
+    color: white;
+    text-align: center;
+}
+
+.searchSection input {
+    font-size: 20px;
+    padding: 10px 20px;
+    min-width: 300px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
