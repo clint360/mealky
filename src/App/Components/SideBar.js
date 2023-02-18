@@ -23,7 +23,7 @@ function SideBar({closer}) {
        <Link to='/explore'><li><i class="fa-brands fa-internet-explorer"></i> Explore</li></Link> 
        <Link to='/recipes'><li><i class="fa-solid fa-utensils"></i> Recipes</li></Link> 
        <Link to='/activity'> <li><i class="fa-regular fa-clipboard"></i> Activity</li></Link>
-        <li><i class="fa-solid fa-right-from-bracket"></i> Log Out</li>
+       <Link to='/'><li><i class="fa-solid fa-right-from-bracket"></i> Log Out</li></Link> 
        </ul>
       </div>
       <div className='bottommost'>© Mealky 2023 - built by <strong>@clint360</strong></div>

@@ -1,0 +1,19 @@
+.main {
+    position: relative;
+    font-family: 'Poppins';
+    width: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 0.862), rgb(0, 0, 0)), url('https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+
+.heading .img {
+    width: 200px;
+    margin: auto;
+}
+
+.heading .img img {
+    width: 100%;
+}

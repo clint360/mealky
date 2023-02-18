@@ -10,6 +10,8 @@ import ViewRecipe from './Pages/ViewRecipe';
 import EditRecipe from './Pages/EditRecipe'
 import Activity from './Pages/Activity';
 import Explore from './Pages/Explore';
+import Landing from '../Landing/Landing';
+import Exploreveiwer from './Explore/Exploreveiwer';
 
 function Face() {
   const [nav, setNav] = useState('translateX(-500px)');
@@ -38,6 +40,8 @@ function Face() {
           <Route path='/edit' element={<EditRecipe />} />
           <Route path='/activity' element={<Activity />} />
           <Route path='/explore' element={<Explore />} />
+          <Route path='/eview' element={<Exploreveiwer />} />
+          <Route path='/' element={<Landing />} />
         </Routes>
       </div>
       </Router>

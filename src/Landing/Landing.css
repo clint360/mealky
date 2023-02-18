@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.landingPage {
+    position: relative;
+    min-height: 100vh;
+    z-index: 999999;
+    background: white;
+    color: white;
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    width: inherit;
+    position: fixed;
+    height: 80px;
+}
+
+.navLogo {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(5% - 10px);
+    width: 90px;
+}
+
+.nav {
+    top: 10px;
+    right: 230px;
+    position: absolute;
+    display: flex;
+    gap: calc(30% - 10px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+    float: center;
+}
+
+.nav p {
+    cursor: pointer;
+}
+
+.nav p:hover {
+    border-bottom: 2px solid white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+}
+
+
+.navLogo img {
+    width: 100%;
+}
+
+.buttons {
+    position: absolute;
+    right: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttons button {
+    padding: 8px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: none;
+    color: orange;
+}
+
+.hero {
+    padding-top: 90px;
+    background: url('https://themewagon.github.io/feane/images/hero-bg.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+}
+
+.welcome .logo {
+    margin: auto;
+    width: calc(70% - 100px)
+} 
+
+.welcome h1 {
+    color: orange;
+    font-size: 80px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Satisfy';
+}
+
+.welcome {
+    padding-top: 40px;
+   flex-basis: 40%;
+}
+
+@media screen and (max-width: 600px) {
+    .welcome {
+        padding-top: 10px;
+        flex-basis: 100%;
+     }
+}
+
+.welcome img {
+    width: 100%;
+    margin: auto;
+}
+
+.food {
+    margin-top: 60px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    flex-basis: 50%;
+    text-align: center;
+    padding-right: 30px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        display: block;
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .food {
+        flex-basis: 100%;
+        padding: 30px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+}

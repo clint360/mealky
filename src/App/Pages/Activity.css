@@ -1,7 +1,8 @@
 .pastactivities {
     color: white;
     padding-top: 70px;
-    min-height: 93vh;
+    min-height: 92vh;
+    height: fit-content;
     background: radial-gradient(rgba(0, 0, 0, 0.703), black), url('https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg');
     background-size: cover;
 }
@@ -21,3 +22,19 @@
 .onehalf:nth-child(1) {
     border-right: 2px solid rgb(255, 255, 255);
 }
+
+.activities {
+    display: flex;
+}
+
+.onehalf1 {
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Poppins';
+    padding-left: 20px;
+}
+
+.left {
+    border-right: 2px solid white;
+}
+

@@ -3,7 +3,7 @@
 }
 
 .explore {
-    padding-top: 0px;
+    padding-top: 70px;
 }
 
 .frame {
@@ -12,5 +12,4 @@
     min-height: 100vh;
     outline: none;
     border: none;
-    margin: -50px auto;
 }

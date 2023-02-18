@@ -6,7 +6,7 @@ import { Context } from '../../Hooks/Context';
 
 
 function EditRecipe() {
-    const { myRecipes, setMyRecipes, currentIndex } = useContext(Context);
+    const { myRecipes, setMyRecipes, currentIndex, setActivity } = useContext(Context);
     const d = new Date()
     const datemodified = d.toDateString();
     var time = d.getHours() + ":" + d.getMinutes();
@@ -14,7 +14,7 @@ function EditRecipe() {
     const recipenameRef = useRef(null);
     const [value, setValue] = useState(myRecipes[currentIndex].content);
     const [image, setImage] = useState(null)
-    const [imageURL, setImageURL] = useState('')
+    const [imageURL, setImageURL] = useState(myRecipes[currentIndex].image)
   
     const handleImageUpload = (e) => {
       e.preventDefault()
@@ -85,7 +85,7 @@ function EditRecipe() {
             spellcheck="true"
             placeholder='Write in your recipe here'
           /><br />
-          <button className='new' style={{marginLeft: "0px", marginTop: '100px'}} onClick={saveRecipe} >Save Recipe</button>
+          <button className='new' style={{marginLeft: "0px", marginTop: '100px'}} onClick={()=>{saveRecipe(); setActivity((prev)=> [...prev, {activity: `Edited the ${myRecipes[currentIndex].name} recipe`, time: `${datemodified} , ${time}` }])}} >Save Recipe</button>
         </section>
        
     </div>

@@ -46,7 +46,7 @@ function Recipes() {
         <p>YOUR RECIPES</p>
    <Link to='/newrecipe'><button className='new'>New Recipe</button></Link>     
         </section>
-       <section id='recipecards'>
+       <section id='recipecards'> 
         {myRecipes.map((items, index) => { return (
        <RecipeCard name={items.name} 
        image={items.image} 

@@ -11,7 +11,7 @@ function NewRecipe() {
   const d = new Date()
     const datemodified = d.toDateString();
     var time = d.getHours() + ":" + d.getMinutes();
-    const { myRecipes, setMyRecipes } = useContext(Context);
+    const { myRecipes, setMyRecipes, setActivity } = useContext(Context);
     const recipenameRef = useRef(null);
     const [value, setValue] = useState('');
     const [recipename, setRecipename] = useState('No name');
@@ -90,7 +90,7 @@ function NewRecipe() {
             spellcheck="true"
             placeholder='Write in your recipe here'
           /><br />
-          <button className='new' style={{marginLeft: "0px", marginTop: '100px'}} onClick={()=>{saveNewRecipe(); window.history.back()}}>Save Recipe</button>
+          <button className='new' style={{marginLeft: "0px", marginTop: '100px'}} onClick={()=>{saveNewRecipe(); window.history.back(); setActivity((prev)=> [...prev, {activity: `Created the ${recipename} recipe`, time: `${datemodified} , ${time}` }])}}>Save Recipe</button>
         </section>
        
     </div>
