@@ -8,7 +8,7 @@ function Landing() {
     <div className='landingPage'>
         <section className='navbar' >
         <div className='nav'>
-            <p>Welcome</p>
+            <p>Welcome </p>
             <p>About</p>
             <p>Contact</p>
         </div>
