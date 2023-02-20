@@ -53,7 +53,7 @@ function Favourites() {
          lm={items.lm}
          open={()=>{open(); setIndexer(index)}}
          pic={()=>{setCurrentIndex(index)}}
-         index={index}
+         index={myRecipes.indexOf(items)}
          present={false}
           />
            )})}
