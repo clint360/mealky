@@ -7,7 +7,6 @@ function Landing() {
   return (
     <div className='landingPage'>
         <section className='navbar'>
-        <div className='navLogo'><img src={logo} /></div> 
         <div className='nav'>
             <p>Welcome</p>
             <p>About</p>
@@ -19,7 +18,7 @@ function Landing() {
       <section className='hero'>
        <div className='welcome'>
         <h1>Welcome to </h1>
-      <div className='logo'><img src={logo} /></div> 
+      <div className='logo'><img src={logo} alt='' /></div> 
       <div className='text'>
       
       </div>
