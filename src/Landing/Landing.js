@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Landing() {
   return (
     <div className='landingPage'>
-        <section className='navbar'>
+        <section className='navbar' >
         <div className='nav'>
             <p>Welcome</p>
             <p>About</p>
